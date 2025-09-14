@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja do Bruno</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bem-vindo à Loja do Amigo</h1>
+            <p>Encontre produtos incríveis com preços especiais!</p>
+            <a href="#produtos" class="btn-hero">Ver Produtos</a>
+        </div>
+    </section>
+
+    <!-- Seção de Produtos -->
+    <section id="produtos" class="produtos">
+        <h2>Nossos Produtos</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="imagens/roupa1.jpeg" alt="roupa1">
+                <h3>Produto 1</h3>
+                <p>Descrição breve do produto 1.</p>
+                <button class="btn" onclick="comprarProduto('Produto 1')">Comprar</button>
+            </div>
+            <div class="card">
+                <img src="imagens/roupa2.jpeg" alt="roupa2">
+                <h3>Produto 2</h3>
+                <p>Descrição breve do produto 2.</p>
+                <button class="btn">Comprar</button>
+            </div>
+            <div class="card">
+                <img src="imagens/roupa3.jpeg" alt="roupa3">
+                <h3>Produto 3</h3>
+                <p>Descrição breve do produto 3.</p>
+                <button class="btn">Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section class="contato">
+        <h2>Fale Conosco</h2>
+        <p>Entre em contato para dúvidas ou pedidos especiais.</p>
+        <a href="mailto:contato@lojadamigo.com" class="btn">Enviar Email</a>
+    </section>
+
+    <footer>
+        <p>© 2025 Loja do Amigo. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+function comprarProduto(produto) {
+    // Substitua pelo seu número com DDD, sem espaços ou símbolos
+    const numero = '5592992945300';
+    const mensagem = `Olá! Quero comprar o ${produto}.`;
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+    window.open(url, '_blank');
+}
+</script>
+</body>
+</html>
